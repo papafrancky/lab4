@@ -3,6 +3,7 @@ name: Publish Package to GitHub NPM Registry
 on: 
   release: 
    types: released
+  workflow_dispatch:
     
 jobs:
     npm-package:
@@ -17,3 +18,4 @@ jobs:
             registry-url: 'https://npm.pkg.github.com/'
         - name: Install NPM dependencies
           run: npm install
+
