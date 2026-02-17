@@ -14,9 +14,10 @@ jobs:
         - name: Install / Setup NodeJS
           uses: actions/setup-node@v4
           with:
-            node-version: "2.x"
+            node-version: "20.x"
             registry-url: 'https://npm.pkg.github.com/'
         - name: Install NPM dependencies
           run: npm install
+
 
 
